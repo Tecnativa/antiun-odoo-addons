@@ -14,18 +14,23 @@ class EventRegistration(models.Model):
     location_id = fields.Many2one(
         "event.track.location",
         "Location",
-        help="Location inside the fair (A1 stand, 3rd floor...).",
+        help="Location inside the fair (Main Hall, 3rd floor...)",
+    )
+    section = fields.Char(
+        help="Section in the location (A-1 stand...)",
     )
 
     def _get_select(self):
         result = super(EventRegistration, self)._get_select()
         result.update({
             "square_meters": "r.square_meters",
-            "location_id": "r.location_id"
+            "location_id": "r.location_id",
+            "section": "r.section",
         })
         return result
 
     def _get_group_by(self):
         result = super(EventRegistration, self)._get_group_by()
         result.append("r.location_id")
+        result.append("r.section")
         return result

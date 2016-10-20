@@ -14,5 +14,8 @@ class EventRegistration(models.Model):
     location_id = fields.Many2one(
         "event.track.location",
         "Location",
-        help="Location inside the fair (A1 stand, 3rd floor...).",
+        help="Location inside the fair (Main Hall, 3rd floor...)",
+    )
+    section = fields.Char(
+        help="Section in the location (A-1 stand...)",
     )
