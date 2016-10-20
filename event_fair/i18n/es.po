@@ -6,16 +6,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 8.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-03-16 16:16+0100\n"
-"PO-Revision-Date: 2016-03-16 16:17+0100\n"
-"Last-Translator: <>\n"
+"POT-Creation-Date: 2016-10-20 13:35+0200\n"
+"PO-Revision-Date: 2016-10-20 13:35+0200\n"
+"Last-Translator: Jairo Llopis <jairo.llopis@tecnativa.com>\n"
 "Language-Team: \n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: \n"
-"X-Generator: Poedit 1.8.6\n"
+"X-Generator: Poedit 1.8.8\n"
 
 #. module: event_fair
 #: help:event.registration,square_meters:0
@@ -43,11 +43,24 @@ msgstr "Ubicación"
 #. module: event_fair
 #: help:event.registration,location_id:0
 #: help:report.event.registration,location_id:0
-msgid "Location inside the fair (A1 stand, 3rd floor...)."
-msgstr "Ubicación dentro de la feria (puesto A1, tercera planta...)."
+msgid "Location inside the fair (Main Hall, 3rd floor...)"
+msgstr "Ubicación dentro de la feria (Salón principal, 3ª planta...)"
+
+#. module: event_fair
+#: field:event.registration,section:0 field:report.event.registration,section:0
+msgid "Section"
+msgstr "Sección"
+
+#. module: event_fair
+#: help:event.registration,section:0 help:report.event.registration,section:0
+msgid "Section in the location (A-1 stand...)"
+msgstr "Sección dentro de la ubicación (Puesto A-1...)"
 
 #. module: event_fair
 #: field:event.registration,square_meters:0
 #: field:report.event.registration,square_meters:0
 msgid "Square meters"
 msgstr "Metros cuadrados"
+
+#~ msgid "Location inside the fair (A1 stand, 3rd floor...)."
+#~ msgstr "Ubicación dentro de la feria (puesto A1, tercera planta...)."
