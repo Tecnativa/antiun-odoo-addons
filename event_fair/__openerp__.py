@@ -4,7 +4,7 @@
 {
     "name": "Fair Data for Events",
     "summary": "New fields needed to work with fairs",
-    "version": "8.0.1.1.0",
+    "version": "8.0.2.0.0",
     "category": "Event Management",
     "website": "https://www.tecnativa.com",
     "author": "Antiun Ingeniería S.L., Tecnativa, "

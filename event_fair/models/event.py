@@ -16,6 +16,7 @@ class EventRegistration(models.Model):
         "Location",
         help="Location inside the fair (Main Hall, 3rd floor...)",
     )
-    section = fields.Char(
-        help="Section in the location (A-1 stand...)",
+    stand = fields.Char(
+        oldname="section",
+        help="Stand in the location (A-1, B-7...)",
     )

@@ -14,7 +14,7 @@
             <group string="Fair" name="fair">
                 <field name="square_meters"/>
                 <field name="location_id"/>
-                <field name="section"/>
+                <field name="stand"/>
             </group>
         </xpath>
     </field>

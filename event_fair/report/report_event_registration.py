@@ -16,8 +16,9 @@ class EventRegistration(models.Model):
         "Location",
         help="Location inside the fair (Main Hall, 3rd floor...)",
     )
-    section = fields.Char(
-        help="Section in the location (A-1 stand...)",
+    stand = fields.Char(
+        oldname="section",
+        help="Stand in the location (A-1, B-7...)",
     )
 
     def _get_select(self):
@@ -25,12 +26,12 @@ class EventRegistration(models.Model):
         result.update({
             "square_meters": "r.square_meters",
             "location_id": "r.location_id",
-            "section": "r.section",
+            "stand": "r.stand",
         })
         return result
 
     def _get_group_by(self):
         result = super(EventRegistration, self)._get_group_by()
         result.append("r.location_id")
-        result.append("r.section")
+        result.append("r.stand")
         return result

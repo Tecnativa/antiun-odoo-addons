@@ -47,20 +47,17 @@ msgid "Location inside the fair (Main Hall, 3rd floor...)"
 msgstr "Ubicación dentro de la feria (Salón principal, 3ª planta...)"
 
 #. module: event_fair
-#: field:event.registration,section:0 field:report.event.registration,section:0
-msgid "Section"
-msgstr "Sección"
+#: field:event.registration,stand:0 field:report.event.registration,stand:0
+msgid "Stand"
+msgstr "Puesto"
 
 #. module: event_fair
-#: help:event.registration,section:0 help:report.event.registration,section:0
-msgid "Section in the location (A-1 stand...)"
-msgstr "Sección dentro de la ubicación (Puesto A-1...)"
+#: help:event.registration,stand:0 help:report.event.registration,stand:0
+msgid "Stand in the location (A-1, B-7...)"
+msgstr "Puesto dentro de la ubicación (A-1, B-7...)"
 
 #. module: event_fair
 #: field:event.registration,square_meters:0
 #: field:report.event.registration,square_meters:0
 msgid "Square meters"
 msgstr "Metros cuadrados"
-
-#~ msgid "Location inside the fair (A1 stand, 3rd floor...)."
-#~ msgstr "Ubicación dentro de la feria (puesto A1, tercera planta...)."
