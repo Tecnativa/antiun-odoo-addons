@@ -27,6 +27,7 @@
             <field name="event_id" position="after">
                 <field name="square_meters" sum="Total"/>
                 <field name="location_id"/>
+                <field name="stand"/>
             </field>
         </field>
     </record>
